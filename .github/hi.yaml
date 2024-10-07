@@ -1,0 +1,14 @@
+name: install_python_app
+
+on:
+ push:
+   branches:
+      - main
+
+ jobs:
+   lint:
+    runs_on: ubuntu-latest
+    steps:
+     name: install_python
+    uses: actions/setup-python@v5
+    run:  python my_script.py
