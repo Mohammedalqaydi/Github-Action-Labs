@@ -1,12 +1,11 @@
 on:
   push:
-
+    branches:
+      - main
+    
 jobs:
-  JobA:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo Running Tests
-        run: echo "Running tests"
-      
-      - name: Run tests
-        run: echo "Tests are running"  # You can replace this with your actual test commands
+      - name: run hello
+        run: echo "hello"
