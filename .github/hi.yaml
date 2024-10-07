@@ -9,6 +9,6 @@ on:
    lint:
     runs_on: ubuntu-latest
     steps:
-     name: install_python
+     name: Install_python
     uses: actions/setup-python@v5
     run:  python my_script.py
